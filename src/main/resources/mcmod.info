@@ -1,0 +1,15 @@
+[
+{
+  "modid": "taoistart",
+  "name": "Taoist Art",
+  "description": "Taoist Art",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "authorList": ["dawnflyc"],
+  "credits": "Taoist Art",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
