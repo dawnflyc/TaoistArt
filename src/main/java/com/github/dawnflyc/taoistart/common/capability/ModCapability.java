@@ -31,6 +31,8 @@ public class ModCapability {
             public void readNBT(Capability<T> capability, T instance, Direction side, INBT nbt) {
             }
         },() -> null);
+
+
     }
 
 }

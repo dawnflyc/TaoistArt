@@ -19,7 +19,7 @@ public class PowerCapabilityProvider implements ICapabilityProvider, INBTSeriali
 
     private IPowerCapability powerCapability;
 
-    public static final ResourceLocation id=new ResourceLocation(TaoistArt.MODID,"power");
+    public static final ResourceLocation name=new ResourceLocation(TaoistArt.MODID,"power");
 
     @Nonnull
     @Override
@@ -36,7 +36,7 @@ public class PowerCapabilityProvider implements ICapabilityProvider, INBTSeriali
     @Nonnull
     IPowerCapability getOrCreateCapability() {
         if (powerCapability == null) {
-            return new PowerCapability();
+            powerCapability= new PowerCapability();
         }
         return this.powerCapability;
     }

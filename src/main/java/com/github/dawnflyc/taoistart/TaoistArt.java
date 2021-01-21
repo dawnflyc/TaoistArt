@@ -2,6 +2,7 @@ package com.github.dawnflyc.taoistart;
 
 
 import com.github.dawnflyc.processtree.ProcessTree;
+import com.github.dawnflyc.taoistart.common.capability.ModCapability;
 import net.minecraftforge.fml.common.Mod;
 
 

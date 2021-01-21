@@ -14,14 +14,22 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class PowerCapabilityEvent {
 
+    /***
+     * 给玩家附加能量能力
+     * @param event
+     */
     @SubscribeEvent
     public static void onAttachCapabilityEvent(AttachCapabilitiesEvent<Entity> event) {
         Entity entity = event.getObject();
         if (entity instanceof PlayerEntity) {
-            event.addCapability(PowerCapabilityProvider.id, new PowerCapabilityProvider());
+            event.addCapability(PowerCapabilityProvider.name, new PowerCapabilityProvider());
         }
     }
 
+    /**
+     * 从末地返回主世界时恢复能力
+     * @param event
+     */
     @SubscribeEvent
     public static void onPlayerCloned(PlayerEvent.Clone event) {
         if (!event.isWasDeath()){
